@@ -17,7 +17,7 @@ nav {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(7, 1, 1);
 }
 
 nav img {
@@ -39,16 +39,15 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: white;
+    color: rgb(118, 69, 217);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .nav-links ul li::after {
     content: '';
     width: 100%;
     height: 2px;
-    background: rgb(123, 0, 0);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -59,16 +58,17 @@ nav img {
 }
 
 .textbox h1 {
-    color: rgb(118, 69, 217);
+    color: rgb(150, 105, 242);
     font-size: 64px;
     display: flex;
     margin-left: 50px;
+    margin-top: 105px;
 }
 
 .textbox p {
     display: flex;
     margin-left: 50px;
-    color: rgba(118, 105, 267, 2)
+    color: rgb(146, 255, 255)
 }
 
 
@@ -76,13 +76,13 @@ nav img {
 
 .button-87 {
     margin-top: 25px;
-    margin-left: 100px;
+    margin-left: 225px;
     padding: 15px 30px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;
+    color: #fff;
     border-radius: 30px;
     display: block;
     border: 0px;
@@ -104,4 +104,164 @@ nav img {
 
 .button-87:active {
     transform: scale(0.95);
+}
+
+.users {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    color: rgb(95, 55, 173);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.users {
+    min-height: 100px;
+    width: 100%;
+    background-image: url(img/74185.png);
+    min-height: unset !important;
+    padding-bottom: 0 !important;
+}
+
+.users p {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 10px;
+    color: #8a80B5
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users-col {
+    flex-basis: 27%;
+    background: rgb(40, 43, 44);
+    border-radius: 10px;
+    margin-bottom: 20%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.users-col:hover {
+    background-position: right-center;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.6);
+}
+
+.users-col h3 {
+    color: rgb(118, 69, 217);
+    font-size: 36px;
+}
+
+.users-col p {
+    color: aqua
+}
+
+.trade {
+    min-height: 400px;
+    text-align: left;
+    padding-top: 170px;
+    margin: auto;
+    width: 100%;
+    background-image: url(img/images.png);
+    background-size: cover;
+    background-position: center;
+    padding-left: 25px;
+}
+
+.trade h1 {
+    color: rgb(95, 55, 173)
+}
+
+.trade p {
+    color: #fff
+}
+
+.button-two {
+    border-radius: 4px;
+    background-color: #d35400;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    margin-top: 15px;
+}
+
+.button-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-two span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-two:hover span {
+    padding-right: 25px;
+}
+
+.button-two:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.trade a {
+    text-decoration: none;
+    padding-left: 37px;
+    color: aquamarine
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-image: url(img/images11.png);
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o {
+    color: red;
 }
